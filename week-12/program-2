@@ -1,0 +1,31 @@
+#include<iostream>
+ #include<deque>
+ usingnamespacestd;
+ intmain(){
+ deque<int>dq;
+ cout<<”Rollno:24B11AI438”<<endl;
+ cout<<"===DEQUEOPERATIONS==="<<endl;
+ dq.push_back(10);
+ dq.push_back(20);
+ dq.push_front(5);
+ cout<<"Dequeelementsafterinsertion:";
+ for(intx:dq)
+ cout<<x<<"";
+ dq.pop_front();
+ cout<<"\nDequeafterdeletingfrontelement:";
+ for(intx:dq)
+ cout <<x<<" ";
+ dq.pop_back();
+ cout<<"\nDequeafterdeletinglastelement:";
+ for(intx:dq)
+ cout<<x<<"";
+ cout<<"\nFrontelement:"<<dq.front();
+ cout<<"\nBackelement:"<<dq.back();
+ dq.push_front(1);
+ dq.push_back(50);
+ cout<<"\nDequeafteradding1(front)and50(back):";
+ for(intx:dq)
+ cout<<x<<"";
+ cout<<endl;
+ return0;
+ }
